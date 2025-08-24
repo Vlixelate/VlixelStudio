@@ -1,0 +1,126 @@
+/* site.css */
+body {
+  overflow-x: hidden;
+  cursor: url('/site-image/vlixel-cursor.cur'), auto !important;
+}
+a, button, .btn, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: url('/site-image/vlixel-cursor.cur'), auto !important;
+}
+.logo-format {
+  width: 100%;
+  height: 50px;
+}
+.image-size {
+  width: 80%;
+  height: auto;
+}
+
+.navi-bar {
+  background-color: rgb(32,22,28);
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.glow-tab {
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.glow-tab:hover, .glow-tab.active {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
+  color: #ff00ff;
+}
+.button-format {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-style:  none;
+}
+.beat {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.bg-image {
+  background-image: url(/site-image/vlixel-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+.bg-image1 {
+  background-image: url(/site-image/Vlixel-bg1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+.footer-format {
+  background-color: rgb(32,22,28);
+  color: white;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.card-style {
+  background-color: rgba(32,22,28, 0.5);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  color: white;
+}
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #00ffff;
+}
+.social-icon:active img {
+  filter: brightness(50%) sepia(30%) saturate(150%);
+  transform: scale(0.98);
+}
+.docu-format {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.docu-format:hover {
+  transform: scale(1.02);
+  filter: brightness(60%);
+}
+.docu-text-overlay {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #1100ff, 0 0 15px #1100ff;
+}
+.docu-format:hover .docu-text-overlay {
+  opacity: 1;
+}
