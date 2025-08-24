@@ -1,10 +1,10 @@
 /* site.css */
 body {
   overflow-x: hidden;
-  cursor: url('/site-image/vlixel-cursor.cur'), auto !important;
+  cursor: url('site-image/vlixel-cursor.cur'), auto !important;
 }
 a, button, .btn, [role="button"], input[type="submit"], input[type="button"] {
-  cursor: url('/site-image/vlixel-cursor.cur'), auto !important;
+  cursor: url('site-image/vlixel-cursor.cur'), auto !important;
 }
 .logo-format {
   width: 100%;
@@ -48,7 +48,7 @@ a, button, .btn, [role="button"], input[type="submit"], input[type="button"] {
   100% { transform: scale(1); }
 }
 .bg-image {
-  background-image: url(/site-image/vlixel-bg.png);
+  background-image: url(site-image/vlixel-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +61,7 @@ a, button, .btn, [role="button"], input[type="submit"], input[type="button"] {
   z-index: -2;
 }
 .bg-image1 {
-  background-image: url(/site-image/Vlixel-bg1.png);
+  background-image: url(site-image/Vlixel-bg1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,3 +124,4 @@ a, button, .btn, [role="button"], input[type="submit"], input[type="button"] {
 .docu-format:hover .docu-text-overlay {
   opacity: 1;
 }
+
